@@ -34,25 +34,33 @@ Built in Intellij/PyCharm IDE
  
 **How to run server:**
 
-Requirements: 
+_Requirements:_ 
 
-_Python 3.6 or above_
+--Python 3.6 or above
 
-verify you are running it either
+--Verify you are running it either
 python --version
 or 
 python3 --version
 
-Clone repo to a directory <my-dir>
+--You have cloned lf_coding_challenge
+ 
+Execute these commands in your Terminal/Shell
 
-`cd <my-dir>`
+`cd shift_cipher`
 
 `python3 -m venv venv`
 
-`source venv/bin/activate`
+`source venv/bin/activate` (Mac OS/Linux)
+`.venv/Scripts/activate` (Windows)
 
 `pip install -r requirements.txt`
 
 `flask run --port 23456`
 
+Server is now running
+
+CTRL-C to kill server
+
+Finally: Type "deactivate" to exit virtual environment
 
