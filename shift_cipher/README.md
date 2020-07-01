@@ -38,16 +38,17 @@ _Requirements:_
 
 --Python 3.6 or above
 
---Verify you are running it either
-python --version
-or 
-python3 --version
+--Verify Python version:
+
+`python --version`
+OR
+`python3 --version`
 
 --You have cloned lf_coding_challenge
  
 Execute these commands in your Terminal/Shell
 
-`cd shift_cipher`
+`cd lf_coding_challenge/shift_cipher`
 
 `python3 -m venv venv`
 
@@ -56,9 +57,14 @@ Execute these commands in your Terminal/Shell
 
 `pip install -r requirements.txt`
 
-`flask run --port 23456`
+`flask run --port 23456 &`
 
-Server is now running
+Server is now running:
+
+**Test:**
+
+`curl -X POST --header "Content-Type: application/json" --data '{"Message":"The quick red fox jumped over the lazy brown dog and charged him $123.03!","Shift": 4}' http://localhost:23456/api/encode
+`
 
 CTRL-C to kill server
 
