@@ -70,3 +70,8 @@ CTRL-C to kill server
 
 Finally: Type "deactivate" to exit virtual environment
 
+**Unit Tests**
+
+Packaging includes pytest
+
+and tests in test_cipher.py

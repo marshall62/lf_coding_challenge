@@ -10,6 +10,16 @@ After cloning,
 
 Browse [http://localhost:3000](http://localhost:3000)
 
+**Notes:**
+I followed the specification closely with the following exceptions:
+
+username field has validation after each character typed which allows quicker
+feedback once the 15 char limit is exceeded.
+
+email validation using the stackoverflow page in the spec leads to a usable regex but the thread is clear about the solutions being out of date.    This regex is good enough for proof of concept but if you were building a component that was meant accept all email addresses, this would become a deeper investigation that would hopefully lead to some type of Javascript library to validate emails.
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
